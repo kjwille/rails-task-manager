@@ -1,0 +1,26 @@
+<h1>
+
+  <%= @task.title %>
+
+</h1>
+
+<p> <%= @task.details %></p>
+
+<p>
+  <% if @task.completed %>
+  ☑️
+  <% else %>
+  ☐
+  <% end %>
+</p>
+
+<%= link_to 'back to list', tasks_path %>
+
+<%= link_to 'update selected task', edit_task_path %>
+
+
+<!--
+title
+description
+completed? -->
+
